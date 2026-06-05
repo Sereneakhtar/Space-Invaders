@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="title">SPACE INVADERS</h1>
+
+    <div class="hud">
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives: 3</div>
+        <div id="level">Level: 1</div>
+    </div>
+
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+    <div id="gameOverScreen" class="hidden">
+        <h2>GAME OVER</h2>
+        <p id="finalScore"></p>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <!-- Option B: ES modules -->
+    <script type="module">
+        import { AudioManager } from "./audio.js";
+        import { Sprites } from "./sprites.js";
+        import "./game.js";   // your version, unchanged
+
+        window.GameAssets = { AudioManager, Sprites };
+    </script>
+</body>
+</html>
