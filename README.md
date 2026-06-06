@@ -40,6 +40,9 @@ To shoot: 'space bar'
 Eliminate the grid of alien ships before they advance to the bottom of the screen. Dodge their incoming laser fire to protect your ship and preserve your remaining lives.
 
 # Project Structure
+## 📁 Project Structure
+
+```text
 SPACE_INVADERS/
 ├── space-invaders-server/
 │   ├── public/              # Frontend static game files
